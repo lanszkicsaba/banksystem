@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Hiba">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HibaTipusa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Muvelet" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Hiba" nillable="true" type="tns:Hiba" />
+  <xs:complexType name="Utal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Eredmeny" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Felhnev" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Osszeg" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Utal" nillable="true" type="tns:Utal" />
+  <xs:complexType name="ArrayOfUtalasok">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Utalasok" nillable="true" type="tns:Utalasok" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUtalasok" nillable="true" type="tns:ArrayOfUtalasok" />
+  <xs:complexType name="Utalasok">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ido" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Nev" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Osszeg" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Utalasok" nillable="true" type="tns:Utalasok" />
+</xs:schema>

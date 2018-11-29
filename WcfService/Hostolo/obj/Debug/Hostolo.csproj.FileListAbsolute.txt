@@ -1,0 +1,8 @@
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\Hostolo\bin\Debug\Hostolo.exe.config
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\Hostolo\bin\Debug\Hostolo.exe
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\Hostolo\bin\Debug\Hostolo.pdb
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\Hostolo\bin\Debug\WcfService.dll
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\Hostolo\bin\Debug\WcfService.pdb
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\Hostolo\obj\Debug\Hostolo.csprojResolveAssemblyReference.cache
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\Hostolo\obj\Debug\Hostolo.exe
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\Hostolo\obj\Debug\Hostolo.pdb

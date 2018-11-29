@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "WcfService\WcfService.csproj", "{26DABF75-14E3-4F1F-9EEC-8F8390BA886A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hostolo", "Hostolo\Hostolo.csproj", "{1446B0B3-54CC-4FE8-9963-FE79AFCFB538}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26DABF75-14E3-4F1F-9EEC-8F8390BA886A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DABF75-14E3-4F1F-9EEC-8F8390BA886A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DABF75-14E3-4F1F-9EEC-8F8390BA886A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DABF75-14E3-4F1F-9EEC-8F8390BA886A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1446B0B3-54CC-4FE8-9963-FE79AFCFB538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1446B0B3-54CC-4FE8-9963-FE79AFCFB538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1446B0B3-54CC-4FE8-9963-FE79AFCFB538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1446B0B3-54CC-4FE8-9963-FE79AFCFB538}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

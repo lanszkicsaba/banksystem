@@ -1,0 +1,5 @@
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\WcfService\bin\WcfService.dll.config
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\WcfService\bin\WcfService.dll
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\WcfService\bin\WcfService.pdb
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\WcfService\obj\Debug\WcfService.dll
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\WcfService\WcfService\obj\Debug\WcfService.pdb

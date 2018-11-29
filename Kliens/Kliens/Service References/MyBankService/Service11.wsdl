@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:30237/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:30237/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService" />
+      <xsd:import schemaLocation="http://localhost:30237/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBank_Bejelentkezes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Bejelentkezes" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Bejelentkezes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BejelentkezesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Bejelentkezes_HibaFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q1:Hiba" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Kijelentkezes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Kijelentkezes" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Kijelentkezes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KijelentkezesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Kijelentkezes_HibaFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q2:Hiba" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Feltoltes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Feltoltes" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Feltoltes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FeltoltesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Feltoltes_HibaFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q3:Hiba" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Lekerdezes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lekerdezes" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Lekerdezes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LekerdezesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Lekerdezes_HibaFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q4:Hiba" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Utalas_InputMessage">
+    <wsdl:part name="parameters" element="tns:Utalas" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Utalas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UtalasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBank_Utalas_HibaFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q5:Hiba" />
+  </wsdl:message>
+  <wsdl:message name="IBank_UtalasokList_InputMessage">
+    <wsdl:part name="parameters" element="tns:UtalasokList" />
+  </wsdl:message>
+  <wsdl:message name="IBank_UtalasokList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UtalasokListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBank_UtalasokList_HibaFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q6:Hiba" />
+  </wsdl:message>
+  <wsdl:portType name="IBank">
+    <wsdl:operation name="Bejelentkezes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBank/Bejelentkezes" message="tns:IBank_Bejelentkezes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBank/BejelentkezesResponse" message="tns:IBank_Bejelentkezes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBank/BejelentkezesHibaFault" name="HibaFault" message="tns:IBank_Bejelentkezes_HibaFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Kijelentkezes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBank/Kijelentkezes" message="tns:IBank_Kijelentkezes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBank/KijelentkezesResponse" message="tns:IBank_Kijelentkezes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBank/KijelentkezesHibaFault" name="HibaFault" message="tns:IBank_Kijelentkezes_HibaFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Feltoltes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBank/Feltoltes" message="tns:IBank_Feltoltes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBank/FeltoltesResponse" message="tns:IBank_Feltoltes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBank/FeltoltesHibaFault" name="HibaFault" message="tns:IBank_Feltoltes_HibaFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lekerdezes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBank/Lekerdezes" message="tns:IBank_Lekerdezes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBank/LekerdezesResponse" message="tns:IBank_Lekerdezes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBank/LekerdezesHibaFault" name="HibaFault" message="tns:IBank_Lekerdezes_HibaFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Utalas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBank/Utalas" message="tns:IBank_Utalas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBank/UtalasResponse" message="tns:IBank_Utalas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBank/UtalasHibaFault" name="HibaFault" message="tns:IBank_Utalas_HibaFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UtalasokList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBank/UtalasokList" message="tns:IBank_UtalasokList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBank/UtalasokListResponse" message="tns:IBank_UtalasokList_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IBank/UtalasokListHibaFault" name="HibaFault" message="tns:IBank_UtalasokList_HibaFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBank" type="tns:IBank">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Bejelentkezes">
+      <soap:operation soapAction="http://tempuri.org/IBank/Bejelentkezes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="HibaFault">
+        <soap:fault use="literal" name="HibaFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Kijelentkezes">
+      <soap:operation soapAction="http://tempuri.org/IBank/Kijelentkezes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="HibaFault">
+        <soap:fault use="literal" name="HibaFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Feltoltes">
+      <soap:operation soapAction="http://tempuri.org/IBank/Feltoltes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="HibaFault">
+        <soap:fault use="literal" name="HibaFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Lekerdezes">
+      <soap:operation soapAction="http://tempuri.org/IBank/Lekerdezes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="HibaFault">
+        <soap:fault use="literal" name="HibaFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Utalas">
+      <soap:operation soapAction="http://tempuri.org/IBank/Utalas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="HibaFault">
+        <soap:fault use="literal" name="HibaFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UtalasokList">
+      <soap:operation soapAction="http://tempuri.org/IBank/UtalasokList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="HibaFault">
+        <soap:fault use="literal" name="HibaFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IBank" binding="tns:BasicHttpBinding_IBank">
+      <soap:address location="http://localhost:30237/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

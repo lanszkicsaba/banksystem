@@ -1,0 +1,9 @@
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\Kliens\Kliens\bin\Debug\Kliens.exe.config
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\Kliens\Kliens\bin\Debug\Kliens.exe
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\Kliens\Kliens\bin\Debug\Kliens.pdb
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\Kliens\Kliens\obj\Debug\Kliens.csprojResolveAssemblyReference.cache
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\Kliens\Kliens\obj\Debug\Kliens.Form1.resources
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\Kliens\Kliens\obj\Debug\Kliens.Properties.Resources.resources
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\Kliens\Kliens\obj\Debug\Kliens.csproj.GenerateResource.Cache
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\Kliens\Kliens\obj\Debug\Kliens.exe
+C:\Users\Csaba\Documents\Suli\6\Az Internet eszközei és szolgáltatásai\gyak\LanszkiCsaba_VizsgaBeadando\Kliens\Kliens\obj\Debug\Kliens.pdb
